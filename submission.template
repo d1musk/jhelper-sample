@@ -38,10 +38,10 @@ bool DBG = false;
 %Code%
 
 int main() {
-	ios_base::sync_with_stdio(false);
-	%ClassName% solver;
-	%Input%
-	%Output%
-	%SolverCall%
-	return 0;
+  ios_base::sync_with_stdio(false);
+  %ClassName% solver;
+  %Input%
+  %Output%
+  %SolverCall%
+  return 0;
 }
