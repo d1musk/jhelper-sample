@@ -64,9 +64,7 @@ int main() {
     else {
       std::cout << "SKIPPED\n";
     }
-
     std::cout << std::endl;
-
   }
   if(allOK) {
     std::cout << "All OK" << std::endl;
