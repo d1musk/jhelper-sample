@@ -1,4 +1,4 @@
-#include "/Users/user/projects/jhelper-sample/tasks/A.cpp"
+#include "/home/dmitriyd/projects/CFE16/tasks/E.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -29,7 +29,7 @@ bool check(std::string expected, std::string actual) {
 
 int main() {
   std::vector<jhelper::Test> tests = {
-    {"5", "5", true, true},{"10", "10", true, true},
+    {"8 1 1", "4", true, true},{"8 1 10", "8", true, true},{"1 5 1", "5", true, true},{"31 1 2", "12", true, true},{"31 1 3", "15", true, true},
   };
   bool allOK = true;
   int testID = 0;
@@ -48,7 +48,7 @@ int main() {
       std::stringstream in(test.input);
       std::ostringstream out;
       std::clock_t start = std::clock();
-      A solver;
+      E solver;
       solver.solve(in, out);
       std::clock_t finish = std::clock();
       double currentTime = double(finish - start) / CLOCKS_PER_SEC;
