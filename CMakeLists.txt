@@ -8,4 +8,4 @@ file(GLOB_RECURSE HEADERS "library/*.hpp" )
 
 ADD_DEFINITIONS(-std=c++11)
 
-add_executable(test ${TASKS} ${HEADERS})
+add_executable(tasks ${TASKS} ${HEADERS})
