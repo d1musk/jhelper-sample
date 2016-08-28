@@ -1,5 +1,3 @@
-#include "/Users/user/projects/jhelper-sample/tasks/A.cpp"
-
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -29,7 +27,7 @@ bool check(std::string expected, std::string actual) {
 
 int main() {
   std::vector<jhelper::Test> tests = {
-    {"5", "5", true, true},{"10", "10", true, true},
+
   };
   bool allOK = true;
   int testID = 0;
