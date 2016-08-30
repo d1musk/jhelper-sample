@@ -29,7 +29,7 @@ bool equals(std::string expected, std::string actual) {
 
 int main() {
   std::vector<jhelper::Test> tests = {
-    %Tests%
+      %Tests%
   };
   bool allOK = true;
   int testID = 0;

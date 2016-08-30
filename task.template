@@ -1,50 +1,12 @@
-#include <algorithm>
-#include <array>
-#include <climits>
-#include <cmath>
-#include <cstdint>
-#include <cstdlib>
-#include <fstream>
-#include <iostream>
-#include <map>
-#include <set>
-#include <sstream>
-#include <string>
-#include <queue>
-#include <vector>
+#include "headers.h"
+#include "shortcuts.h"
+#include "check.h"
 
 using namespace std;
 
-#define forn(i, n) for (int i = 0; i < (int)(n); ++i)
-#define mp make_pair
-#define X first
-#define Y second
-
-typedef long long ll;
-typedef vector<int> vi;
-typedef vector<vi> vvi;
-typedef vector<bool> vb;
-typedef vector<vb> vvb;
-typedef vector<char> vc;
-typedef vector<vc> vvc;
-typedef vector<ll> vl;
-typedef vector<vl> vvl;
-typedef pair<int, int> Point;
-typedef vector<Point> vp;
-typedef vector<vp> vvp;
-
-bool DBG = false;
-
-#define check(e) \
-  ((void) ((e) ? ((void)0) : __check(#e, __FILE__, __LINE__)))
-
-#define __check(e, file, line) \
-  ((void)printf("%s:%u: failed check `%s'\n", file, line, e), abort())
-
-
 class %ClassName% {
 public:
-  void solve(std::istream& in, std::ostream& out) {
+void solve(std::istream& in, std::ostream& out) {
 
-  }
+}
 };
