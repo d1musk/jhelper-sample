@@ -35,7 +35,12 @@ typedef vector<vp> vvp;
 
 bool DBG = false;
 
-void check(bool c) { if (!c) throw 1; }
+#define check(e) \
+  ((void) ((e) ? ((void)0) : __check(#e, __FILE__, __LINE__)))
+
+#define __check(e, file, line) \
+  ((void)printf("%s:%u: failed check `%s'\n", file, line, e), abort())
+
 
 class %ClassName% {
 public:

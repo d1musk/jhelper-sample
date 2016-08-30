@@ -17,7 +17,7 @@ struct Test {
   bool has_output;
 };
 
-bool check(std::string expected, std::string actual) {
+bool equals(std::string expected, std::string actual) {
   while(!expected.empty() && isspace(*--expected.end()))
     expected.erase(--expected.end());
   while(!actual.empty() && isspace(*--actual.end()))
@@ -55,7 +55,7 @@ int main() {
       maxTime = std::max(currentTime, maxTime);
       std::cout << "Actual output: \n" << out.str() << std::endl;
       if (test.has_output) {
-        bool result = jhelper::check(test.output, out.str());
+        bool result = jhelper::equals(test.output, out.str());
         allOK = allOK && result;
         std::cout << "Result: " << (result ? "OK" : "Wrong answer") << std::endl;
       }
