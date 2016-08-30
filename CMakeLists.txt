@@ -3,7 +3,9 @@ project(jhelper-sample)
 
 add_executable(output output/main.cpp)
 add_executable(testrunner testrunner/main.cpp)
-file(GLOB TASKS "tasks/*.cpp")
+include_directories("${CMAKE_SOURCE_DIR}/../../base")
 add_definitions(-std=c++11)
 
-add_executable(tasks ${TASKS})
+file(GLOB TASKS "tasks/*.cpp")
+add_executable(tasks ${TASKS} ${HEADERS})
+
